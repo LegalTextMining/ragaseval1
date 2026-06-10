@@ -1,0 +1,54 @@
+{
+  "Korupsi, Gratifikasi, Suap": {
+    "faithfulness": 0.9329,
+    "answer_relevancy": 0.7763
+  },
+  "Pembunuhan": {
+    "faithfulness": 0.9375,
+    "answer_relevancy": 0.7377
+  },
+  "Penganiayaan": {
+    "faithfulness": 0.9727,
+    "answer_relevancy": 0.6802
+  },
+  "Penghinaan/Pencemaran Nama Baik": {
+    "faithfulness": 0.7444,
+    "answer_relevancy": 0.6796
+  },
+  "Penyalahgunaan Jabatan": {
+    "faithfulness": 0.8639,
+    "answer_relevancy": 0.6728
+  },
+  "Penyebaran Konten Illegal": {
+    "faithfulness": 0.8412,
+    "answer_relevancy": 0.67
+  },
+  "Produk Ilegal (Narkotika)": {
+    "faithfulness": 0.8679,
+    "answer_relevancy": 0.5707
+  },
+  "Bahan Berbahaya": {
+    "faithfulness": 0.8937,
+    "answer_relevancy": 0.6157
+  },
+  "Ujaran Kebencian": {
+    "faithfulness": 0.9017,
+    "answer_relevancy": 0.5929
+  },
+  "Pencurian": {
+    "faithfulness": 0.9089,
+    "answer_relevancy": 0.6493
+  },
+  "Penipuan/Curang": {
+    "faithfulness": 0.8272,
+    "answer_relevancy": 0.5933
+  },
+  "Ancaman/Pemerasan": {
+    "faithfulness": 0.8365,
+    "answer_relevancy": 0.5494
+  },
+  "Lainnya": {
+    "faithfulness": 0.8721,
+    "answer_relevancy": 0.7312
+  }
+}
