@@ -1,1 +1,931 @@
 2026-06-11 12:13:47,629 [INFO] Memuat LLM dan embedding model …
+2026-06-11 12:13:50,055 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:50,082 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:50,335 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:50,336 [WARNING] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-11 12:13:50,365 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:50,372 [INFO] Loading SentenceTransformer model from BAAI/bge-m3.
+2026-06-11 12:13:50,624 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:50,650 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:50,910 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:50,936 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/README.md "HTTP/1.1 200 OK"
+2026-06-11 12:13:51,209 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:51,238 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/modules.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:51,502 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:51,528 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:51,788 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-11 12:13:52,049 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:52,078 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:52,368 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-11 12:13:52,633 [INFO] HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-06-11 12:13:52,788 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-11 12:13:52,916 [INFO] HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/main "HTTP/1.1 200 OK"
+2026-06-11 12:13:53,042 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-11 12:13:53,204 [INFO] HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/discussions?p=0 "HTTP/1.1 200 OK"
+2026-06-11 12:13:53,300 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-11 12:13:53,495 [INFO] HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/commits/refs%2Fpr%2F130 "HTTP/1.1 200 OK"
+2026-06-11 12:13:53,556 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-11 12:13:53,756 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-11 12:13:53,811 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:53,837 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:54,014 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/refs%2Fpr%2F130/model.safetensors "HTTP/1.1 302 Found"
+2026-06-11 12:13:54,098 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:54,126 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:54,383 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:54,411 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/config.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:54,667 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:54,697 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:54,960 [INFO] HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-11 12:13:55,223 [INFO] HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-11 12:13:57,053 [INFO] HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-06-11 12:13:57,323 [INFO] HTTP Request: HEAD https://huggingface.co/BAAI/bge-m3/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-11 12:13:57,350 [INFO] HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/BAAI/bge-m3/5617a9f61b028005a4858fdac845db406aefb181/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-11 12:13:57,605 [INFO] HTTP Request: GET https://huggingface.co/api/models/BAAI/bge-m3 "HTTP/1.1 200 OK"
+2026-06-11 12:13:57,611 [INFO] Metrik aktif: ['faithfulness', 'answer_relevancy']
+2026-06-11 12:13:57,612 [INFO] answer_relevancy.strictness = 1
+2026-06-11 12:13:57,612 [INFO] Model siap.
+2026-06-11 12:13:57,625 [INFO] Dataset dimuat: 200 baris, 7 kolom
+2026-06-11 12:13:57,647 [INFO] Tidak ada checkpoint — mulai dari awal.
+2026-06-11 12:13:57,663 [INFO] Akan mengevaluasi 200 baris …
+2026-06-11 12:14:13,911 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:14:33,103 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:15:02,254 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:15:03,804 [INFO] [Row 0] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apa yang dimaksud perbuatan korupsi yang merugikan keuangan ' | faithfulness=1.000 | answer_relevancy=0.642
+2026-06-11 12:15:04,685 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:15:24,963 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:15:56,997 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:15:57,987 [INFO] [Row 1] ✓ 'Korupsi, Gratifikasi, Suap' | 'Bagaimana hukum penyalahgunaan jabatan untuk keuntungan prib' | faithfulness=1.000 | answer_relevancy=0.855
+2026-06-11 12:15:59,107 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:16:18,902 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:16:48,685 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:16:49,741 [INFO] [Row 2] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apa perbedaan hukuman antara pemberi dan penerima suap dalam' | faithfulness=1.000 | answer_relevancy=0.000
+2026-06-11 12:16:50,723 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:17:11,738 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:17:44,471 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:17:45,562 [INFO] [Row 3] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apakah pemberian hadiah kepada pejabat tanpa perjanjian lang' | faithfulness=1.000 | answer_relevancy=0.663
+2026-06-11 12:17:46,662 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:18:04,610 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:18:34,195 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:18:35,488 [INFO] [Row 4] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apa saja ancaman pidana bagi setiap orang yang secara melawa' | faithfulness=0.750 | answer_relevancy=0.822
+2026-06-11 12:18:36,407 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:18:49,894 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:19:07,792 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:19:08,711 [INFO] [Row 5] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apakah pidana mati dapat dijatuhkan dalam kasus tindak pidan' | faithfulness=0.000 | answer_relevancy=0.794
+2026-06-11 12:19:10,582 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:19:23,888 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:19:46,336 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:19:47,442 [INFO] [Row 6] ✓ 'Korupsi, Gratifikasi, Suap' | 'Seorang pejabat negara menyalahgunakan kewenangannya untuk m' | faithfulness=0.000 | answer_relevancy=0.690
+2026-06-11 12:19:48,332 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:20:11,117 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:20:48,707 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:20:49,824 [INFO] [Row 7] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apakah pelaku korupsi dapat bebas dari hukuman jika sudah me' | faithfulness=1.000 | answer_relevancy=0.817
+2026-06-11 12:20:50,479 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:21:08,185 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:21:35,943 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:21:36,994 [INFO] [Row 8] ✓ 'Korupsi, Gratifikasi, Suap' | 'Berapa ancaman pidana bagi pegawai negeri yang melakukan tin' | faithfulness=0.625 | answer_relevancy=0.000
+2026-06-11 12:21:38,032 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:22:03,153 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:22:40,443 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:22:41,604 [INFO] [Row 9] ✓ 'Korupsi, Gratifikasi, Suap' | 'Seseorang memberi hadiah kepada pegawai negeri dengan mengin' | faithfulness=1.000 | answer_relevancy=0.771
+2026-06-11 12:22:42,824 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:22:58,307 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:23:19,402 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:23:20,367 [INFO] [Row 10] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apakah korporasi dapat menjadi subjek tindak pidana korupsi ' | faithfulness=1.000 | answer_relevancy=0.870
+2026-06-11 12:23:21,498 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:23:39,509 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:24:05,522 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:24:06,900 [INFO] [Row 11] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apa yang dimaksud perbuatan korupsi yang merugikan keuangan ' | faithfulness=1.000 | answer_relevancy=0.668
+2026-06-11 12:24:07,244 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:24:27,814 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:25:00,464 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:25:01,456 [INFO] [Row 12] ✓ 'Korupsi, Gratifikasi, Suap' | 'Bagaimana hukum penyalahgunaan jabatan untuk keuntungan prib' | faithfulness=1.000 | answer_relevancy=0.855
+2026-06-11 12:25:01,713 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:25:21,373 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:25:51,010 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:25:52,067 [INFO] [Row 13] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apa perbedaan hukuman antara pemberi dan penerima suap dalam' | faithfulness=1.000 | answer_relevancy=0.000
+2026-06-11 12:25:52,334 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:26:15,235 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:26:50,950 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:26:52,071 [INFO] [Row 14] ✓ 'Korupsi, Gratifikasi, Suap' | 'Apakah pemberian hadiah kepada pejabat tanpa perjanjian lang' | faithfulness=1.000 | answer_relevancy=0.719
+2026-06-11 12:26:53,035 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:27:10,661 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:27:37,320 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:27:38,573 [INFO] [Row 15] ✓ 'Pembunuhan' | 'Berapa ancaman hukuman maksimal bagi seseorang yang membunuh' | faithfulness=0.125 | answer_relevancy=0.807
+2026-06-11 12:27:39,466 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:27:58,916 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:28:25,630 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:28:26,727 [INFO] [Row 16] ✓ 'Pembunuhan' | 'Kalau seseorang sudah merencanakan pembunuhan secara matang ' | faithfulness=0.909 | answer_relevancy=0.794
+2026-06-11 12:28:27,838 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:29:00,080 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:29:56,779 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:30:33,765 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 12:30:34,771 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:30:46,222 [INFO] [Row 17] ✓ 'Pembunuhan' | 'Berapa ancaman hukuman maksimal bagi seseorang yang membunuh' | answer_relevancy=0.778
+2026-06-11 12:30:46,733 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:31:04,634 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:31:33,180 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:31:34,239 [INFO] [Row 18] ✓ 'Pembunuhan' | 'Kalau seseorang sudah merencanakan pembunuhan secara matang ' | faithfulness=0.889 | answer_relevancy=0.792
+2026-06-11 12:31:35,268 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:31:50,714 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:32:14,524 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:32:15,833 [INFO] [Row 19] ✓ 'Pembunuhan' | 'Bagaimana hukumannya jika seorang ibu membunuh bayinya yang ' | faithfulness=1.000 | answer_relevancy=0.877
+2026-06-11 12:32:16,942 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:32:43,880 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:33:26,944 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:33:28,006 [INFO] [Row 20] ✓ 'Pembunuhan' | 'Apakah seseorang tetap bisa dipenjara jika dia membunuh oran' | faithfulness=1.000 | answer_relevancy=0.751
+2026-06-11 12:33:28,988 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:33:50,904 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:34:22,413 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:34:23,596 [INFO] [Row 21] ✓ 'Pembunuhan' | 'Jika saya memberikan obat atau alat kepada teman yang ingin ' | faithfulness=1.000 | answer_relevancy=0.803
+2026-06-11 12:34:24,529 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:34:45,282 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:35:17,959 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:35:19,124 [INFO] [Row 22] ✓ 'Pembunuhan' | 'Jika seseorang lalai saat merenovasi rumah sehingga menjatuh' | faithfulness=1.000 | answer_relevancy=0.807
+2026-06-11 12:35:20,111 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:35:40,424 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:36:13,510 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:36:47,875 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:37:21,667 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:37:26,161 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 12:37:26,955 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:37:38,063 [INFO] [Row 23] ✓ 'Pembunuhan' | 'Jika seorang arsitek atau kontraktor lalai dalam menghitung ' | answer_relevancy=0.643
+2026-06-11 12:37:39,580 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:38:05,115 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:38:48,358 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:38:49,427 [INFO] [Row 24] ✓ 'Pembunuhan' | 'Apakah perempuan korban perkosaan yang melakukan aborsi kare' | faithfulness=1.000 | answer_relevancy=0.694
+2026-06-11 12:38:50,252 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:39:09,110 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:39:43,667 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:40:19,860 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:40:54,415 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:40:54,466 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 12:40:55,138 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:41:06,276 [INFO] [Row 25] ✓ 'Pembunuhan' | 'Berapa ancaman penjara bagi orang yang melakukan aborsi terh' | answer_relevancy=0.806
+2026-06-11 12:41:07,675 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:41:33,063 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:42:19,052 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:42:20,293 [INFO] [Row 26] ✓ 'Pembunuhan' | 'Jika seorang bidan atau apoteker membantu melakukan aborsi i' | faithfulness=1.000 | answer_relevancy=0.781
+2026-06-11 12:42:21,143 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:42:41,105 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:43:09,942 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:43:11,085 [INFO] [Row 27] ✓ 'Pembunuhan' | 'Apa konsekuensi hukum bagi pihak yang sengaja melakukan pemb' | faithfulness=1.000 | answer_relevancy=0.760
+2026-06-11 12:43:11,906 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:43:28,384 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:43:50,738 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:43:51,901 [INFO] [Row 28] ✓ 'Pembunuhan' | 'Dalam situasi konflik bersenjata, jika ada kelompok yang mem' | faithfulness=1.000 | answer_relevancy=0.758
+2026-06-11 12:43:52,800 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:44:08,573 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:44:30,809 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:44:31,820 [INFO] [Row 29] ✓ 'Pembunuhan' | 'Jika saya terlibat dalam tawuran atau perkelahian massal yan' | faithfulness=1.000 | answer_relevancy=0.729
+2026-06-11 12:44:33,034 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:44:50,587 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:45:15,695 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:45:16,722 [INFO] [Row 30] ✓ 'Penganiayaan' | 'Apa saja ketentuan dan hukuman terkait penganiayaan hewan me' | faithfulness=1.000 | answer_relevancy=0.785
+2026-06-11 12:45:17,801 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:45:37,673 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:46:09,940 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:46:10,926 [INFO] [Row 31] ✓ 'Penganiayaan' | 'Apa saja kondisi yang menyebabkan pemberatan pidana dalam ti' | faithfulness=0.900 | answer_relevancy=0.686
+2026-06-11 12:46:12,039 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:46:31,459 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:46:58,779 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:46:59,865 [INFO] [Row 32] ✓ 'Penganiayaan' | 'Bagaimana aturan kepemilikan senjata tajam menurut KUHP?' | faithfulness=1.000 | answer_relevancy=0.690
+2026-06-11 12:47:00,668 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:47:19,830 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:47:50,213 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:47:51,462 [INFO] [Row 33] ✓ 'Penganiayaan' | 'Jika seseorang sudah merencanakan untuk menyakiti atau memuk' | faithfulness=1.000 | answer_relevancy=0.716
+2026-06-11 12:47:52,256 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:48:13,438 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:48:44,853 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:48:45,842 [INFO] [Row 34] ✓ 'Penganiayaan' | 'Bagaimana ketentuan hukum jika penganiayaan berat dilakukan ' | faithfulness=1.000 | answer_relevancy=0.673
+2026-06-11 12:48:46,735 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:49:02,721 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:49:33,510 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:49:34,752 [INFO] [Row 35] ✓ 'Penganiayaan' | 'Pak, saya mau tanya. Tetangga saya sering menyiksa kucing li' | faithfulness=1.000 | answer_relevancy=0.610
+2026-06-11 12:49:35,794 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:49:52,518 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:50:20,057 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:50:21,742 [INFO] [Row 36] ✓ 'Penganiayaan' | 'Kalau misalnya ada anak yang menyiramkan racun atau bahan be' | faithfulness=0.000 | answer_relevancy=0.719
+2026-06-11 12:50:22,734 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:50:41,777 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:51:08,908 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:51:10,225 [INFO] [Row 37] ✓ 'Penganiayaan' | 'Anak saya baru saja ditangkap polisi karena kedapatan membaw' | faithfulness=1.000 | answer_relevancy=0.550
+2026-06-11 12:51:11,139 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:51:26,659 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:51:48,501 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:51:49,768 [INFO] [Row 38] ✓ 'Penganiayaan' | 'Saya sebagai saksi melihat ada kelompok orang yang sudah jan' | faithfulness=1.000 | answer_relevancy=0.605
+2026-06-11 12:51:50,651 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:52:06,453 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:52:29,648 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:52:30,781 [INFO] [Row 39] ✓ 'Penganiayaan' | 'Jika pelaku sengaja mengincar korban untuk dilumpuhkan atau ' | faithfulness=1.000 | answer_relevancy=0.458
+2026-06-11 12:52:31,016 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:52:48,466 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:53:12,994 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:53:14,423 [INFO] [Row 40] ✓ 'Penganiayaan' | 'Apa saja ketentuan dan hukuman terkait penganiayaan hewan me' | faithfulness=1.000 | answer_relevancy=0.789
+2026-06-11 12:53:14,685 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:53:34,535 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:54:06,978 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:54:07,947 [INFO] [Row 41] ✓ 'Penganiayaan' | 'Apa saja kondisi yang menyebabkan pemberatan pidana dalam ti' | faithfulness=1.000 | answer_relevancy=0.686
+2026-06-11 12:54:08,202 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:54:27,912 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:54:54,366 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:54:55,460 [INFO] [Row 42] ✓ 'Penganiayaan' | 'Bagaimana aturan kepemilikan senjata tajam menurut KUHP?' | faithfulness=1.000 | answer_relevancy=0.690
+2026-06-11 12:54:55,704 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:55:16,543 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:55:49,323 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:55:50,573 [INFO] [Row 43] ✓ 'Penganiayaan' | 'Jika seseorang sudah merencanakan untuk menyakiti atau memuk' | faithfulness=1.000 | answer_relevancy=0.704
+2026-06-11 12:55:50,802 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:56:12,301 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:56:45,927 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:56:46,967 [INFO] [Row 44] ✓ 'Penganiayaan' | 'Bagaimana ketentuan hukum jika penganiayaan berat dilakukan ' | faithfulness=1.000 | answer_relevancy=0.668
+2026-06-11 12:56:48,024 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:57:07,875 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:57:38,373 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:57:39,561 [INFO] [Row 45] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Waktu demo kemarin, ada orang yang teriak-teriak menghina da' | faithfulness=1.000 | answer_relevancy=0.683
+2026-06-11 12:57:40,638 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:58:14,274 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:58:33,530 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:58:34,661 [INFO] [Row 46] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Beredar meme yang isinya menghina dan merendahkan Wakil Pres' | faithfulness=0.400 | answer_relevancy=0.706
+2026-06-11 12:58:35,590 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:58:56,708 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:59:34,168 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:59:35,223 [INFO] [Row 47] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Tetanggaku secara terang-terangan bilang ke warga sekitar ba' | faithfulness=1.000 | answer_relevancy=0.662
+2026-06-11 12:59:36,580 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 12:59:59,293 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:00:36,247 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:00:37,361 [INFO] [Row 48] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Apa yang dimaksud dengan fitnah menurut  UU KUHP dan apa bed' | faithfulness=1.000 | answer_relevancy=0.572
+2026-06-11 13:00:38,298 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:00:56,596 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:01:23,325 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:01:24,721 [INFO] [Row 49] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Caesar mengejek dan menghina rekan kerjanya langsung di depa' | faithfulness=0.857 | answer_relevancy=0.671
+2026-06-11 13:01:25,619 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:01:50,759 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:02:30,143 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:02:31,539 [INFO] [Row 50] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Saya lagi nonton konser musik di taman kota, tiba-tiba ada o' | faithfulness=0.895 | answer_relevancy=0.578
+2026-06-11 13:02:32,463 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:02:52,621 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:03:20,725 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:03:21,983 [INFO] [Row 51] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Kemarin malam ada orang yang menempelkan poster besar di pin' | faithfulness=1.000 | answer_relevancy=0.563
+2026-06-11 13:03:22,956 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:03:43,618 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:04:19,777 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:04:20,878 [INFO] [Row 52] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Saya dituduh melakukan tindak kekerasan di grup WhatsApp RT ' | faithfulness=1.000 | answer_relevancy=0.565
+2026-06-11 13:04:21,929 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:04:38,057 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:05:04,973 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:05:32,465 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:06:01,026 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:06:02,094 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:06:02,094 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:06:02,095 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:06:02,096 [ERROR] Prompt n_l_i_statement_prompt failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:06:02,097 [ERROR] Exception raised in Job[0]: RagasOutputParserException(The output parser failed to parse the output including retries.)
+2026-06-11 13:06:03,044 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:06:14,284 [INFO] [Row 53] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Seorang jurnalis menuduh seorang pejabat menerima suap dalam' | answer_relevancy=0.719
+2026-06-11 13:06:16,797 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:06:37,572 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:07:13,573 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:07:14,858 [INFO] [Row 54] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Saya dikirimin pesan WhatsApp pribadi oleh mantan pacar yang' | faithfulness=1.000 | answer_relevancy=0.652
+2026-06-11 13:07:16,144 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:07:38,407 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:08:17,496 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:08:18,814 [INFO] [Row 55] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Waktu demo kemarin, ada orang yang teriak-teriak menghina da' | faithfulness=1.000 | answer_relevancy=0.663
+2026-06-11 13:08:19,084 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:08:52,719 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:09:10,347 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:09:11,459 [INFO] [Row 56] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Beredar meme yang isinya menghina dan merendahkan Wakil Pres' | faithfulness=0.500 | answer_relevancy=0.706
+2026-06-11 13:09:11,701 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:09:31,724 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:09:56,805 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:09:57,848 [INFO] [Row 57] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Tetanggaku secara terang-terangan bilang ke warga sekitar ba' | faithfulness=1.000 | answer_relevancy=0.662
+2026-06-11 13:09:58,103 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:10:20,755 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:10:56,540 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:10:57,622 [INFO] [Row 58] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Apa yang dimaksud dengan fitnah menurut  UU KUHP dan apa bed' | faithfulness=1.000 | answer_relevancy=0.572
+2026-06-11 13:10:57,890 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:11:18,929 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:11:50,187 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:11:51,526 [INFO] [Row 59] ✓ 'Penghinaan/Pencemaran Nama Baik' | 'Caesar mengejek dan menghina rekan kerjanya langsung di depa' | faithfulness=1.000 | answer_relevancy=0.691
+2026-06-11 13:11:52,585 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:12:11,648 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:12:40,718 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:12:41,949 [INFO] [Row 60] ✓ 'Penyalahgunaan Jabatan' | 'Apa hukuman bagi pejabat yang membiarkan tahanan melarikan d' | faithfulness=1.000 | answer_relevancy=0.799
+2026-06-11 13:12:42,855 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:13:02,626 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:13:26,549 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:13:27,783 [INFO] [Row 61] ✓ 'Penyalahgunaan Jabatan' | 'Apa konsekuensi hukum jika pejabat tidak melaporkan penahana' | faithfulness=0.889 | answer_relevancy=0.847
+2026-06-11 13:13:28,749 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:13:50,675 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:14:24,418 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:14:25,666 [INFO] [Row 62] ✓ 'Penyalahgunaan Jabatan' | 'Apakah pejabat lembaga pemasyarakatan boleh menolak perminta' | faithfulness=1.000 | answer_relevancy=0.719
+2026-06-11 13:14:26,432 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:14:45,403 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:15:16,780 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:15:17,899 [INFO] [Row 63] ✓ 'Penyalahgunaan Jabatan' | 'Apa sanksi bagi pejabat yang memasukkan orang ke tahanan tan' | faithfulness=1.000 | answer_relevancy=0.722
+2026-06-11 13:15:18,135 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:15:37,195 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:16:05,640 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:16:06,852 [INFO] [Row 64] ✓ 'Penyalahgunaan Jabatan' | 'Apa hukuman bagi pejabat yang membiarkan tahanan melarikan d' | faithfulness=1.000 | answer_relevancy=0.799
+2026-06-11 13:16:07,094 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:16:27,189 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:16:55,887 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:16:56,975 [INFO] [Row 65] ✓ 'Penyalahgunaan Jabatan' | 'Apa konsekuensi hukum jika pejabat tidak melaporkan penahana' | faithfulness=0.909 | answer_relevancy=0.808
+2026-06-11 13:16:57,215 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:17:23,332 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:17:59,972 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:18:01,181 [INFO] [Row 66] ✓ 'Penyalahgunaan Jabatan' | 'Apakah pejabat lembaga pemasyarakatan boleh menolak perminta' | faithfulness=1.000 | answer_relevancy=0.741
+2026-06-11 13:18:01,413 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:18:20,354 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:18:51,549 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:18:52,518 [INFO] [Row 67] ✓ 'Penyalahgunaan Jabatan' | 'Apa sanksi bagi pejabat yang memasukkan orang ke tahanan tan' | faithfulness=1.000 | answer_relevancy=0.716
+2026-06-11 13:18:53,537 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:19:23,241 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:20:08,985 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:20:10,119 [INFO] [Row 68] ✓ 'Penyalahgunaan Jabatan' | 'Apakah pejabat boleh menggeledah rumah tanpa prosedur hukum ' | faithfulness=1.000 | answer_relevancy=0.790
+2026-06-11 13:20:11,178 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:20:36,733 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:21:17,238 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:21:18,322 [INFO] [Row 69] ✓ 'Penyalahgunaan Jabatan' | 'Apa hukum jika pejabat menyalahgunakan akses terhadap surat ' | faithfulness=1.000 | answer_relevancy=0.850
+2026-06-11 13:21:19,397 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:21:40,567 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:22:15,963 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:22:17,286 [INFO] [Row 70] ✓ 'Penyalahgunaan Jabatan' | 'Apa hukuman bagi petugas yang merusak atau mengambil isi kir' | faithfulness=0.938 | answer_relevancy=0.787
+2026-06-11 13:22:19,782 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:22:39,514 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:23:11,760 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:23:12,939 [INFO] [Row 71] ✓ 'Penyalahgunaan Jabatan' | 'Apakah membantu pelanggaran distribusi surat juga bisa dipid' | faithfulness=1.000 | answer_relevancy=0.809
+2026-06-11 13:23:14,161 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:23:36,737 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:24:15,220 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:24:16,497 [INFO] [Row 72] ✓ 'Penyalahgunaan Jabatan' | 'Apa hukum bagi pejabat yang menikahkan seseorang padahal ia ' | faithfulness=1.000 | answer_relevancy=0.768
+2026-06-11 13:24:17,344 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:24:40,988 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:25:17,899 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:25:19,188 [INFO] [Row 73] ✓ 'Penyalahgunaan Jabatan' | 'Apakah pejabat dalam hal ini panitera pengganti boleh mengel' | faithfulness=1.000 | answer_relevancy=0.654
+2026-06-11 13:25:19,948 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:25:38,206 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:26:03,063 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:26:04,201 [INFO] [Row 74] ✓ 'Penyalahgunaan Jabatan' | 'Apa sanksi bagi mantan pejabat yang menahan dokumen dinas ta' | faithfulness=1.000 | answer_relevancy=0.858
+2026-06-11 13:26:06,752 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:26:25,792 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:26:57,231 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:26:58,260 [INFO] [Row 75] ✓ 'Penyebaran Konten Illegal' | 'Teman saya ketahuan jualan video porno lewat grup Telegram b' | faithfulness=1.000 | answer_relevancy=0.589
+2026-06-11 13:26:59,336 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:27:18,404 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:27:50,767 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:27:51,828 [INFO] [Row 76] ✓ 'Penyebaran Konten Illegal' | 'Mantan pacar saya menyebarkan video intim kita ke beberapa t' | faithfulness=1.000 | answer_relevancy=0.636
+2026-06-11 13:27:52,755 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:28:10,121 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:28:37,726 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:28:38,857 [INFO] [Row 77] ✓ 'Penyebaran Konten Illegal' | 'Saya secara sengaja merekam dan mengunggah video porno diri ' | faithfulness=1.000 | answer_relevancy=0.650
+2026-06-11 13:28:39,659 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:28:56,908 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:29:29,617 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:29:30,704 [INFO] [Row 78] ✓ 'Penyebaran Konten Illegal' | 'Saya nemu ada orang yang nyewain flashdisk berisi film-film ' | faithfulness=0.929 | answer_relevancy=0.615
+2026-06-11 13:29:33,346 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:29:52,261 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:30:11,050 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:30:28,445 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:30:47,170 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:30:47,180 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:30:47,180 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:30:47,180 [ERROR] Prompt statement_generator_prompt failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:30:47,180 [ERROR] Exception raised in Job[0]: RagasOutputParserException(The output parser failed to parse the output including retries.)
+2026-06-11 13:30:50,040 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:30:53,576 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:31:12,420 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:31:29,816 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:31:45,306 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:31:45,318 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:31:45,322 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:31:45,324 [ERROR] Prompt response_relevance_prompt failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 13:31:45,324 [ERROR] Exception raised in Job[1]: RagasOutputParserException(The output parser failed to parse the output including retries.)
+2026-06-11 13:31:45,340 [INFO] [Row 79] ✓ 'Penyebaran Konten Illegal' | 'Sebagai admin web, saya sengaja menyediakan ruang dan link u' | 
+2026-06-11 13:31:46,523 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:32:10,463 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:32:46,087 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:32:47,403 [INFO] [Row 80] ✓ 'Penyebaran Konten Illegal' | 'Saya seorang dokter yang ingin menerbitkan buku edukasi anat' | faithfulness=1.000 | answer_relevancy=0.789
+2026-06-11 13:32:48,266 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:33:13,939 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:33:45,414 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:33:46,661 [INFO] [Row 81] ✓ 'Penyebaran Konten Illegal' | 'Kalau saya cuma ikut-ikutan forward link video mesum ke grup' | faithfulness=0.769 | answer_relevancy=0.588
+2026-06-11 13:33:47,569 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:34:04,633 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:34:33,439 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:34:34,603 [INFO] [Row 82] ✓ 'Penyebaran Konten Illegal' | 'Tetangga saya suka nonton film porno di teras rumah pakai pr' | faithfulness=1.000 | answer_relevancy=0.652
+2026-06-11 13:34:35,269 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:34:49,330 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:35:07,988 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:35:09,206 [INFO] [Row 83] ✓ 'Penyebaran Konten Illegal' | 'Saya bekerja di bea cukai dan menemukan seseorang menyelundu' | faithfulness=1.000 | answer_relevancy=0.632
+2026-06-11 13:35:09,903 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:35:24,326 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:35:47,593 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:35:48,684 [INFO] [Row 84] ✓ 'Penyebaran Konten Illegal' | 'Anak saya ditangkap polisi karena kedapatan sedang menyalin ' | faithfulness=0.833 | answer_relevancy=0.698
+2026-06-11 13:35:49,430 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:36:04,132 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:36:24,853 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:36:26,171 [INFO] [Row 85] ✓ 'Penyebaran Konten Illegal' | 'Berapa batas minimum dan maksimum hukuman penjara bagi orang' | faithfulness=1.000 | answer_relevancy=0.759
+2026-06-11 13:36:26,910 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:36:45,640 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:37:16,217 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:37:17,185 [INFO] [Row 86] ✓ 'Penyebaran Konten Illegal' | 'Seorang WNA mencoba membawa konten video porno buatan lokal ' | faithfulness=1.000 | answer_relevancy=0.612
+2026-06-11 13:37:18,314 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:37:38,288 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:38:10,184 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:38:11,468 [INFO] [Row 87] ✓ 'Penyebaran Konten Illegal' | 'Saya pernah ditawari paket video syur lewat DM Instagram, ta' | faithfulness=1.000 | answer_relevancy=0.742
+2026-06-11 13:38:12,276 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:38:28,142 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:38:51,259 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:38:52,321 [INFO] [Row 88] ✓ 'Penyebaran Konten Illegal' | 'Saya baru tahu kalau foto-foto intim saya tanpa izin dijadik' | faithfulness=1.000 | answer_relevancy=0.676
+2026-06-11 13:38:53,342 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:39:11,363 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:39:40,704 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:39:41,841 [INFO] [Row 89] ✓ 'Penyebaran Konten Illegal' | 'Teman saya ketahuan jualan video porno lewat grup Telegram b' | faithfulness=0.900 | answer_relevancy=0.828
+2026-06-11 13:39:42,976 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:40:05,937 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:40:37,775 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:40:38,943 [INFO] [Row 90] ✓ 'Produk Ilegal (Narkotika)' | 'Bagaimana hukuman kepemilikan narkotika berdasarkan jenis da' | faithfulness=1.000 | answer_relevancy=0.799
+2026-06-11 13:40:39,867 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:40:57,981 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:41:24,926 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:41:25,930 [INFO] [Row 91] ✓ 'Produk Ilegal (Narkotika)' | 'Apa hukuman bagi produksi atau distribusi narkotika dalam ju' | faithfulness=1.000 | answer_relevancy=0.617
+2026-06-11 13:41:26,714 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:41:45,168 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:42:13,427 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:42:14,420 [INFO] [Row 92] ✓ 'Produk Ilegal (Narkotika)' | 'Bagaimana dasar penentuan jenis narkotika dalam hukum pidana' | faithfulness=1.000 | answer_relevancy=0.822
+2026-06-11 13:42:15,059 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:42:31,507 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:42:59,664 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:43:00,942 [INFO] [Row 93] ✓ 'Produk Ilegal (Narkotika)' | 'Adik saya baru saja ditangkap karena kedapatan menyimpan sab' | faithfulness=0.286 | answer_relevancy=0.641
+2026-06-11 13:43:01,864 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:43:22,429 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:43:54,115 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:43:55,221 [INFO] [Row 94] ✓ 'Produk Ilegal (Narkotika)' | 'Tetangga saya ketahuan mengedarkan ganja seberat 2 kilogram.' | faithfulness=1.000 | answer_relevancy=0.584
+2026-06-11 13:43:56,073 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:44:13,475 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:44:43,776 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:44:45,057 [INFO] [Row 95] ✓ 'Produk Ilegal (Narkotika)' | 'Berapa ancaman hukuman bagi seseorang yang tanpa hak memilik' | faithfulness=1.000 | answer_relevancy=0.770
+2026-06-11 13:44:45,735 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:45:02,237 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:45:24,691 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:45:25,867 [INFO] [Row 96] ✓ 'Produk Ilegal (Narkotika)' | 'Seorang kurir ditangkap membawa Narkotika Golongan I bukan t' | faithfulness=0.333 | answer_relevancy=0.000
+2026-06-11 13:45:26,346 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:45:42,860 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:46:06,439 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:46:07,916 [INFO] [Row 97] ✓ 'Produk Ilegal (Narkotika)' | 'Apakah ada kemungkinan pidana mati untuk tindak pidana narko' | faithfulness=1.000 | answer_relevancy=0.000
+2026-06-11 13:46:08,658 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:46:28,768 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:47:05,101 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:47:06,034 [INFO] [Row 98] ✓ 'Produk Ilegal (Narkotika)' | 'Seseorang menjual Narkotika Golongan I seberat 8 gram kepada' | faithfulness=1.000 | answer_relevancy=0.669
+2026-06-11 13:47:06,434 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:47:07,739 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:47:20,965 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:47:21,744 [INFO] [Row 99] ✓ 'Produk Ilegal (Narkotika)' | 'Apa perbedaan hukuman antara penyalahguna Narkotika Golongan' | faithfulness=1.000 | answer_relevancy=0.000
+2026-06-11 13:47:22,596 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:47:54,649 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:48:32,728 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:49:26,165 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:49:28,778 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 13:49:29,655 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:49:40,983 [INFO] [Row 100] ✓ 'Produk Ilegal (Narkotika)' | 'Seorang pecandu Narkotika yang sudah cukup umur dapat dibukt' | answer_relevancy=0.757
+2026-06-11 13:49:42,279 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:49:45,818 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:50:04,268 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:50:05,265 [INFO] [Row 101] ✓ 'Produk Ilegal (Narkotika)' | 'Apakah korporasi dapat dipidana dalam kasus tindak pidana na' | faithfulness=1.000 | answer_relevancy=0.756
+2026-06-11 13:50:05,519 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:50:24,848 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:50:55,911 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:50:57,038 [INFO] [Row 102] ✓ 'Produk Ilegal (Narkotika)' | 'Bagaimana hukuman kepemilikan narkotika berdasarkan jenis da' | faithfulness=1.000 | answer_relevancy=0.781
+2026-06-11 13:50:57,293 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:51:15,446 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:51:42,163 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:51:43,181 [INFO] [Row 103] ✓ 'Produk Ilegal (Narkotika)' | 'Apa hukuman bagi produksi atau distribusi narkotika dalam ju' | faithfulness=1.000 | answer_relevancy=0.617
+2026-06-11 13:51:43,409 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:52:01,808 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:52:30,066 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:52:31,024 [INFO] [Row 104] ✓ 'Produk Ilegal (Narkotika)' | 'Bagaimana dasar penentuan jenis narkotika dalam hukum pidana' | faithfulness=1.000 | answer_relevancy=0.822
+2026-06-11 13:52:32,135 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:52:55,525 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:53:42,705 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:54:31,286 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:54:37,079 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 13:54:38,018 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:54:49,435 [INFO] [Row 105] ✓ 'Bahan Berbahaya' | 'Apa akibat hukum jika seseorang dengan sengaja menjual atau ' | answer_relevancy=0.879
+2026-06-11 13:54:50,689 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:55:11,409 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:55:40,448 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:55:41,819 [INFO] [Row 106] ✓ 'Bahan Berbahaya' | 'Bagaimana ancaman hukum jika seseorang karena kelalaian atau' | faithfulness=1.000 | answer_relevancy=0.777
+2026-06-11 13:55:43,237 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:56:27,102 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:57:17,014 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:57:18,463 [INFO] [Row 107] ✓ 'Bahan Berbahaya' | 'Apa hukuman menjual makanan atau minuman berbahaya bagi kese' | faithfulness=1.000 | answer_relevancy=0.710
+2026-06-11 13:57:19,468 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:57:37,702 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:58:05,902 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:58:07,285 [INFO] [Row 108] ✓ 'Bahan Berbahaya' | 'Bapak saya beli pestisida di toko tetapi tidak diberi tahu k' | faithfulness=0.818 | answer_relevancy=0.651
+2026-06-11 13:58:08,358 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:58:24,830 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:58:48,802 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:58:49,944 [INFO] [Row 109] ✓ 'Bahan Berbahaya' | 'Saya lihat ada online shop menjual cream wajah yang mengandu' | faithfulness=0.333 | answer_relevancy=0.676
+2026-06-11 13:58:50,849 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:59:11,936 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:59:48,232 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 13:59:49,401 [INFO] [Row 110] ✓ 'Bahan Berbahaya' | 'Kalau ada distributor yang nawarin zat kimia buat pengolahan' | faithfulness=0.600 | answer_relevancy=0.000
+2026-06-11 13:59:50,284 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:00:08,070 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:00:33,801 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:00:34,875 [INFO] [Row 111] ✓ 'Bahan Berbahaya' | 'Sebagai mahasiswa hukum, saya ingin bertanya terkait aset ba' | faithfulness=0.857 | answer_relevancy=0.658
+2026-06-11 14:00:35,937 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:00:57,569 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:01:31,339 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:01:32,543 [INFO] [Row 112] ✓ 'Bahan Berbahaya' | 'Karyawan gudang saya tanpa sengaja mengirimkan cairan pember' | faithfulness=1.000 | answer_relevancy=0.612
+2026-06-11 14:01:33,484 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:01:50,600 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:02:19,597 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:02:21,531 [INFO] [Row 113] ✓ 'Bahan Berbahaya' | 'Saya punya usaha warung makan dan tanpa sengaja beli minyak ' | faithfulness=1.000 | answer_relevancy=0.641
+2026-06-11 14:02:22,424 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:02:39,794 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:03:06,964 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:03:08,306 [INFO] [Row 114] ✓ 'Bahan Berbahaya' | 'Tetangga saya meninggal dunia setelah minum cairan pembersih' | faithfulness=1.000 | answer_relevancy=0.649
+2026-06-11 14:03:09,118 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:03:26,785 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:03:54,698 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:03:56,168 [INFO] [Row 115] ✓ 'Bahan Berbahaya' | 'Jika seseorang lupa memberi label peringatan pada bahan kimi' | faithfulness=1.000 | answer_relevancy=0.632
+2026-06-11 14:03:57,030 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:04:14,574 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:04:41,932 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:04:43,182 [INFO] [Row 116] ✓ 'Bahan Berbahaya' | 'Di pasar tradisional dekat rumah, ada pedagang yang kedapata' | faithfulness=1.000 | answer_relevancy=0.670
+2026-06-11 14:04:44,297 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:05:04,454 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:05:36,587 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:05:37,816 [INFO] [Row 117] ✓ 'Bahan Berbahaya' | 'Saya menyewa jasa katering dan ternyata mereka menggunakan b' | faithfulness=1.000 | answer_relevancy=0.637
+2026-06-11 14:05:38,894 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:05:57,617 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:06:29,691 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:06:30,849 [INFO] [Row 118] ✓ 'Bahan Berbahaya' | 'Ada pedagang kaki lima yang kepergok menjual minuman yang te' | faithfulness=0.909 | answer_relevancy=0.749
+2026-06-11 14:06:31,894 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:06:54,275 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:07:29,696 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:08:06,070 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:08:45,678 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 14:08:47,000 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:08:48,117 [INFO] [Row 119] ✓ 'Bahan Berbahaya' | 'Saya seorang peternak ayam. Ada kompetitor saya yang dengan ' | answer_relevancy=0.642
+2026-06-11 14:08:49,021 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:09:04,428 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:09:27,887 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:09:29,015 [INFO] [Row 120] ✓ 'Ujaran Kebencian' | 'Mumun membuat postingan di muka umum yang menyatakan perasaa' | faithfulness=1.000 | answer_relevancy=0.610
+2026-06-11 14:09:29,962 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:09:50,380 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:10:33,317 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:10:34,674 [INFO] [Row 121] ✓ 'Ujaran Kebencian' | 'Mumun menyebarluaskan postingan ujaran kebencian terhadap ke' | faithfulness=0.963 | answer_relevancy=0.698
+2026-06-11 14:10:37,355 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:10:52,019 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:11:06,412 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:11:21,102 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:11:35,077 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 14:11:35,077 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 14:11:35,087 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 14:11:35,088 [ERROR] Prompt statement_generator_prompt failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 14:11:35,088 [ERROR] Exception raised in Job[0]: RagasOutputParserException(The output parser failed to parse the output including retries.)
+2026-06-11 14:11:38,010 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:11:53,054 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:12:08,457 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:12:24,074 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:12:37,872 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 14:12:37,872 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 14:12:37,872 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 14:12:37,872 [ERROR] Prompt response_relevance_prompt failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 14:12:37,872 [ERROR] Exception raised in Job[1]: RagasOutputParserException(The output parser failed to parse the output including retries.)
+2026-06-11 14:12:37,902 [INFO] [Row 122] ✓ 'Ujaran Kebencian' | 'Ketika saya lewat di jalan saya tidak sengata melihat bu Hen' | 
+2026-06-11 14:12:38,977 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:12:56,890 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:13:22,346 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:13:23,675 [INFO] [Row 123] ✓ 'Ujaran Kebencian' | 'Saya kemarin ngelihat di salah satu demo ada orator yang ngo' | faithfulness=1.000 | answer_relevancy=0.640
+2026-06-11 14:13:24,708 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:13:46,352 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:14:14,554 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:14:15,667 [INFO] [Row 124] ✓ 'Ujaran Kebencian' | 'Saya sempat bikin status di media sosial yang isinya hinaan ' | faithfulness=1.000 | answer_relevancy=0.698
+2026-06-11 14:14:16,588 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:14:32,788 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:14:57,819 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:14:58,822 [INFO] [Row 125] ✓ 'Ujaran Kebencian' | 'Saya seorang perempuan yang sering mendapatkan ucapan kebenc' | faithfulness=0.857 | answer_relevancy=0.666
+2026-06-11 14:14:59,712 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:15:23,403 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:15:56,185 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:15:57,765 [INFO] [Row 126] ✓ 'Ujaran Kebencian' | 'Kalau ada yang menyebut rasa permusuhan kepada kelompok masy' | faithfulness=1.000 | answer_relevancy=0.827
+2026-06-11 14:15:58,669 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:16:19,317 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:16:41,556 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:16:42,848 [INFO] [Row 127] ✓ 'Ujaran Kebencian' | 'Toko kelontong saya dirusak massa setelah ada akun Facebook ' | faithfulness=1.000 | answer_relevancy=0.597
+2026-06-11 14:16:43,907 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:17:06,317 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:17:39,322 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:17:40,562 [INFO] [Row 128] ✓ 'Ujaran Kebencian' | 'Saya nggak sengaja forward pesan WhatsApp yang isinya ajakan' | faithfulness=1.000 | answer_relevancy=0.487
+2026-06-11 14:17:41,562 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:17:59,798 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:18:27,221 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:18:28,565 [INFO] [Row 129] ✓ 'Ujaran Kebencian' | 'Waktu lagi nonton live streaming, saya lihat si host nge-pos' | faithfulness=1.000 | answer_relevancy=0.613
+2026-06-11 14:18:29,613 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:18:46,948 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:19:11,291 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:19:12,728 [INFO] [Row 130] ✓ 'Ujaran Kebencian' | 'Apa bedanya Pasal 242 dan Pasal 243 (1) KUHP terkait ujaran ' | faithfulness=0.200 | answer_relevancy=0.730
+2026-06-11 14:19:13,544 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:19:33,217 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:19:36,721 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:19:48,052 [INFO] [Row 131] ✓ 'Ujaran Kebencian' | 'Saya lihat ada pengisi acara di sebuah panggung terbuka seca' | faithfulness=1.000 | answer_relevancy=0.613
+2026-06-11 14:19:49,494 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:20:12,699 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:20:52,278 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:20:53,425 [INFO] [Row 132] ✓ 'Ujaran Kebencian' | 'Saya sedang bikin konten debat publik dan saya sengaja bilan' | faithfulness=1.000 | answer_relevancy=0.581
+2026-06-11 14:20:54,366 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:21:15,243 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:21:50,903 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:21:52,042 [INFO] [Row 133] ✓ 'Ujaran Kebencian' | 'Adik saya diajak sama tetangga untuk meninggalkan agamanya l' | faithfulness=1.000 | answer_relevancy=0.581
+2026-06-11 14:21:52,978 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:22:14,030 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:22:47,155 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:22:48,519 [INFO] [Row 134] ✓ 'Ujaran Kebencian' | 'Berapa lama hukuman penjara maksimal buat orang yang terbukt' | faithfulness=1.000 | answer_relevancy=0.671
+2026-06-11 14:22:49,625 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:23:15,546 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:23:57,678 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:23:59,347 [INFO] [Row 135] ✓ 'Pencurian' | 'Apakah seorang istri bisa langsung melaporkan suaminya ke po' | faithfulness=1.000 | answer_relevancy=0.762
+2026-06-11 14:24:00,282 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:24:21,398 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:24:54,477 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:24:55,536 [INFO] [Row 136] ✓ 'Pencurian' | 'Apakah hukumannya akan lebih berat jika seseorang nekat menc' | faithfulness=1.000 | answer_relevancy=0.765
+2026-06-11 14:24:56,499 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:25:17,157 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:25:49,323 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:25:50,744 [INFO] [Row 137] ✓ 'Pencurian' | 'Apakah orang yang mengambil sandal kira-kira seharga 100 rib' | faithfulness=1.000 | answer_relevancy=0.821
+2026-06-11 14:25:51,660 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:26:11,928 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:26:38,845 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:26:39,818 [INFO] [Row 138] ✓ 'Pencurian' | 'Bagaimana hukuman bagi pencuri yang menggunakan kekerasan sa' | faithfulness=1.000 | answer_relevancy=0.776
+2026-06-11 14:26:40,873 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:26:58,860 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:27:28,382 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:27:29,838 [INFO] [Row 139] ✓ 'Pencurian' | 'Saya seorang suami. Istri saya diam-diam mengambil uang di d' | faithfulness=1.000 | answer_relevancy=0.673
+2026-06-11 14:27:30,813 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:27:48,217 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:28:15,262 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:28:16,783 [INFO] [Row 140] ✓ 'Pencurian' | 'Teman saya sering mengeluh karena suaminya sering mengambil ' | faithfulness=1.000 | answer_relevancy=0.709
+2026-06-11 14:28:17,605 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:28:36,868 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:29:12,321 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:29:13,267 [INFO] [Row 141] ✓ 'Pencurian' | 'Kalau ada orang yang nekat mencuri patung keramat di sebuah ' | faithfulness=0.600 | answer_relevancy=0.708
+2026-06-11 14:29:14,064 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:29:31,578 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:29:55,099 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:29:56,190 [INFO] [Row 142] ✓ 'Pencurian' | 'Sapi-sapi milik petani yang jadi satu-satunya sumber penghas' | faithfulness=1.000 | answer_relevancy=0.643
+2026-06-11 14:29:56,989 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:30:14,383 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:30:42,485 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:30:43,599 [INFO] [Row 143] ✓ 'Pencurian' | 'Rumah saya dibobol maling pada malam hari saat kami sedang t' | faithfulness=0.909 | answer_relevancy=0.706
+2026-06-11 14:30:44,488 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:31:02,390 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:31:29,963 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:31:31,204 [INFO] [Row 144] ✓ 'Pencurian' | 'Di daerah saya ada komplotan pencuri motor yang terorganisir' | faithfulness=1.000 | answer_relevancy=0.683
+2026-06-11 14:31:32,136 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:31:53,085 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:32:26,373 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:33:01,098 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:33:35,486 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:33:39,242 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 14:33:40,024 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:33:51,405 [INFO] [Row 145] ✓ 'Pencurian' | 'Tas kecil berisi charger HP dan buku catatan yang nilainya s' | answer_relevancy=0.724
+2026-06-11 14:33:52,687 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:34:23,731 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:35:23,061 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:35:59,435 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 14:36:00,394 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:36:11,824 [INFO] [Row 146] ✓ 'Pencurian' | 'Helm saya yang harganya cuma 200 ribu rupiah raib dari motor' | answer_relevancy=0.736
+2026-06-11 14:36:12,947 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:36:35,242 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:37:02,705 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:37:03,967 [INFO] [Row 147] ✓ 'Pencurian' | 'Kacamata hitam saya yang harganya sekitar 300 ribu rupiah hi' | faithfulness=1.000 | answer_relevancy=0.770
+2026-06-11 14:37:04,865 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:37:22,708 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:37:51,452 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:37:52,620 [INFO] [Row 148] ✓ 'Pencurian' | 'Seorang pencuri merampok toko emas dan saat melarikan diri m' | faithfulness=0.933 | answer_relevancy=0.597
+2026-06-11 14:37:53,411 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:38:10,051 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:38:36,522 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:38:37,623 [INFO] [Row 149] ✓ 'Pencurian' | 'Adik saya menjadi korban jambret di jalan. Adik saya mencoba' | faithfulness=1.000 | answer_relevancy=0.514
+2026-06-11 14:38:38,591 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:38:59,568 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:39:29,515 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:39:30,476 [INFO] [Row 150] ✓ 'Penipuan/Curang' | 'Kalau orang bohong soal kondisi kesehatannya pas ngajuin asu' | faithfulness=1.000 | answer_relevancy=0.813
+2026-06-11 14:39:31,261 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:39:47,603 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:40:11,286 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:40:12,580 [INFO] [Row 151] ✓ 'Penipuan/Curang' | 'Saya beli laptop online, udah deal spesifikasi tertentu, pas' | faithfulness=1.000 | answer_relevancy=0.756
+2026-06-11 14:40:13,779 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:40:31,014 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:40:55,717 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:40:56,982 [INFO] [Row 152] ✓ 'Penipuan/Curang' | 'Apa yang dimaksud dengan penipuan ringan menurut KUHP?' | faithfulness=0.500 | answer_relevancy=0.760
+2026-06-11 14:40:58,041 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:41:16,659 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:41:44,299 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:41:45,556 [INFO] [Row 153] ✓ 'Penipuan/Curang' | 'Ayah saya beli rumah lewat agen, ternyata agеnnya nutupin ca' | faithfulness=0.286 | answer_relevancy=0.000
+2026-06-11 14:41:46,415 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:42:04,826 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:42:34,523 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:42:35,649 [INFO] [Row 154] ✓ 'Penipuan/Curang' | 'Pak Bondan ketahuan sengaja bakar gudangnya sendiri karena l' | faithfulness=1.000 | answer_relevancy=0.582
+2026-06-11 14:42:36,633 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:42:56,652 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:43:28,263 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:43:29,562 [INFO] [Row 155] ✓ 'Penipuan/Curang' | 'Teman saya ngaku nggak punya riwayat penyakit jantung pas da' | faithfulness=1.000 | answer_relevancy=0.538
+2026-06-11 14:43:30,528 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:43:51,278 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:44:21,592 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:44:22,806 [INFO] [Row 156] ✓ 'Penipuan/Curang' | 'Saya punya ruko yang saya asuransikan sebagai bangunan koson' | faithfulness=1.000 | answer_relevancy=0.738
+2026-06-11 14:44:23,614 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:44:41,594 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:45:10,058 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:45:11,305 [INFO] [Row 157] ✓ 'Penipuan/Curang' | 'Saya pesan HP second yang diiklanin kondisi mulus dan origin' | faithfulness=1.000 | answer_relevancy=0.604
+2026-06-11 14:45:12,133 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:45:31,819 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:46:04,069 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:46:05,122 [INFO] [Row 158] ✓ 'Penipuan/Curang' | 'Saya pesan meja makan custom dari kayu jati solid lewat onli' | faithfulness=1.000 | answer_relevancy=0.632
+2026-06-11 14:46:06,186 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:46:27,267 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:46:59,272 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:47:00,657 [INFO] [Row 159] ✓ 'Penipuan/Curang' | 'Saya ketipu beli sepatu online senilai Rp600.000, ternyata y' | faithfulness=1.000 | answer_relevancy=0.706
+2026-06-11 14:47:02,980 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:47:26,086 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:48:08,527 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:48:52,253 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:49:08,695 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 14:49:11,047 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:49:22,358 [INFO] [Row 160] ✓ 'Penipuan/Curang' | 'Kakak saya ditipu sama penjual yang ngasih barang beda dari ' | answer_relevancy=0.501
+2026-06-11 14:49:23,522 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:49:46,679 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:50:23,455 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:50:24,983 [INFO] [Row 161] ✓ 'Penipuan/Curang' | 'Saya beli mobil bekas, penjualnya bilang mobil nggak pernah ' | faithfulness=0.917 | answer_relevancy=0.000
+2026-06-11 14:50:26,161 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:50:45,342 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:51:16,900 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:51:18,052 [INFO] [Row 162] ✓ 'Penipuan/Curang' | 'Saya mau beli sebidang tanah. Pemiliknya nggak bilang kalau ' | faithfulness=0.909 | answer_relevancy=0.637
+2026-06-11 14:51:19,215 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:51:34,630 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:51:58,051 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:51:59,098 [INFO] [Row 163] ✓ 'Penipuan/Curang' | 'Pemilik restoran di kompleks ruko sengaja bikin korsleting l' | faithfulness=0.167 | answer_relevancy=0.615
+2026-06-11 14:52:00,067 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:52:23,217 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:52:58,061 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:52:59,331 [INFO] [Row 164] ✓ 'Penipuan/Curang' | 'Saya dari tim pengelola gedung. Kami curiga ada pengusaha ya' | faithfulness=1.000 | answer_relevancy=0.532
+2026-06-11 14:53:00,086 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:53:14,731 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:53:35,074 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:53:36,296 [INFO] [Row 165] ✓ 'Ancaman/Pemerasan' | 'Kalau ada orang yang memaksa orang lain melakukan tindakan a' | faithfulness=1.000 | answer_relevancy=0.676
+2026-06-11 14:53:36,975 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:53:57,324 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:54:27,174 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:54:28,317 [INFO] [Row 166] ✓ 'Ancaman/Pemerasan' | 'Jika seorang suami memaksa istrinya berhubungan badan dengan' | faithfulness=1.000 | answer_relevancy=0.767
+2026-06-11 14:54:29,377 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:54:46,597 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:55:11,749 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:55:12,988 [INFO] [Row 167] ✓ 'Ancaman/Pemerasan' | 'Jika mantan pacar memaksa saya untuk menikah padahal saya ti' | faithfulness=1.000 | answer_relevancy=0.712
+2026-06-11 14:55:13,902 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:55:34,714 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:55:56,786 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:55:57,955 [INFO] [Row 168] ✓ 'Ancaman/Pemerasan' | 'Ada orang mengirim surat ancaman untuk membakar rumah saya d' | faithfulness=1.000 | answer_relevancy=0.672
+2026-06-11 14:56:00,499 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:56:17,560 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:56:44,198 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:56:45,384 [INFO] [Row 169] ✓ 'Ancaman/Pemerasan' | 'Apa seseorang yang memalak atau memaksa orang lain menyerahk' | faithfulness=0.833 | answer_relevancy=0.797
+2026-06-11 14:56:46,726 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:57:12,387 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:57:42,673 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:57:43,848 [INFO] [Row 170] ✓ 'Ancaman/Pemerasan' | 'Seandainya ada orang mengancam akan membongkar rahasia saya ' | faithfulness=1.000 | answer_relevancy=0.681
+2026-06-11 14:57:44,908 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:58:10,845 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:58:51,617 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:58:52,873 [INFO] [Row 171] ✓ 'Ancaman/Pemerasan' | 'Saya dikenalkan seseorang lewat aplikasi kencan, tapi saat k' | faithfulness=1.000 | answer_relevancy=0.640
+2026-06-11 14:58:53,742 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:59:11,149 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:59:37,461 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 14:59:38,645 [INFO] [Row 172] ✓ 'Ancaman/Pemerasan' | 'Anak saya yang masih di bawah umur dipaksa oleh tetangga unt' | faithfulness=1.000 | answer_relevancy=0.650
+2026-06-11 14:59:39,700 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:00:00,027 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:00:36,019 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:01:14,057 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:01:50,015 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 15:01:51,254 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:01:52,517 [INFO] [Row 173] ✓ 'Ancaman/Pemerasan' | 'Kakak saya sering dipaksa berhubungan suami istri oleh suami' | answer_relevancy=0.000
+2026-06-11 15:01:53,505 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:02:09,063 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:02:34,758 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:02:35,966 [INFO] [Row 174] ✓ 'Ancaman/Pemerasan' | 'Atasan saya di kantor memaksa saya menandatangani dokumen ya' | faithfulness=1.000 | answer_relevancy=0.699
+2026-06-11 15:02:36,843 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:02:54,068 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:03:23,996 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:03:25,471 [INFO] [Row 175] ✓ 'Ancaman/Pemerasan' | 'Teman lama saya meminta saya untuk menghibahkan sebidang tan' | faithfulness=0.889 | answer_relevancy=0.746
+2026-06-11 15:03:26,616 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:03:46,332 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:04:18,062 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:04:19,143 [INFO] [Row 176] ✓ 'Ancaman/Pemerasan' | 'Saya mendapat pesan WhatsApp dari nomor tidak dikenal yang m' | faithfulness=1.000 | answer_relevancy=0.733
+2026-06-11 15:04:20,044 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:04:35,186 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:05:02,808 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:05:04,262 [INFO] [Row 177] ✓ 'Ancaman/Pemerasan' | 'Saya dikirim surat berisi ancaman bahwa rumah toko saya akan' | faithfulness=1.000 | answer_relevancy=0.730
+2026-06-11 15:05:06,830 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:05:30,391 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:06:20,477 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:06:21,572 [INFO] [Row 178] ✓ 'Ancaman/Pemerasan' | 'Pedagang di pasar saya dikeroyok oleh sekelompok orang yang ' | faithfulness=1.000 | answer_relevancy=0.510
+2026-06-11 15:06:22,558 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:06:43,950 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:07:13,154 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:07:14,285 [INFO] [Row 179] ✓ 'Ancaman/Pemerasan' | 'Mantan rekan bisnis saya mengancam akan membongkar kecuranga' | faithfulness=1.000 | answer_relevancy=0.699
+2026-06-11 15:07:15,323 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:07:35,278 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:08:01,160 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:08:02,147 [INFO] [Row 180] ✓ 'Lainnya' | 'Apa perbedaan mendasar antara perbuatan yang disebut sebagai' | faithfulness=1.000 | answer_relevancy=0.803
+2026-06-11 15:08:02,987 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:08:22,245 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:08:50,117 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:08:51,091 [INFO] [Row 181] ✓ 'Lainnya' | 'Berapa lama ancaman hukuman bagi seseorang yang dengan senga' | faithfulness=1.000 | answer_relevancy=0.743
+2026-06-11 15:08:52,233 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:09:14,319 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:09:50,038 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:09:51,184 [INFO] [Row 182] ✓ 'Lainnya' | 'Apa saja perbuatan ceroboh di ruang publik yang dapat dipida' | faithfulness=0.947 | answer_relevancy=0.716
+2026-06-11 15:09:51,951 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:10:08,359 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:10:33,207 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:10:34,348 [INFO] [Row 183] ✓ 'Lainnya' | 'Apa saja jenis surat yang jika dipalsukan diancam dengan pid' | faithfulness=1.000 | answer_relevancy=0.797
+2026-06-11 15:10:34,948 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:10:50,283 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:11:14,610 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:11:15,820 [INFO] [Row 184] ✓ 'Lainnya' | 'Mas Amin meninggalkan istri dan anaknya yang sudah berumur 1' | faithfulness=1.000 | answer_relevancy=0.638
+2026-06-11 15:11:16,722 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:11:33,736 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:12:02,092 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:12:03,223 [INFO] [Row 185] ✓ 'Lainnya' | 'Mas Amin sengaja meninggalkan istri dan anaknya yang masih b' | faithfulness=1.000 | answer_relevancy=0.637
+2026-06-11 15:12:04,431 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:12:18,834 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:12:39,776 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:12:40,839 [INFO] [Row 186] ✓ 'Lainnya' | 'Jika ada anak kecil berumur 12 tahun melakukan kesalahan yan' | faithfulness=0.800 | answer_relevancy=0.705
+2026-06-11 15:12:41,901 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:13:10,259 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:13:49,652 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:13:50,860 [INFO] [Row 187] ✓ 'Lainnya' | 'Dalam hukum, cedera seperti apa saja yang sudah bisa dikateg' | faithfulness=1.000 | answer_relevancy=0.784
+2026-06-11 15:13:51,686 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:14:10,776 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:14:38,776 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:14:39,759 [INFO] [Row 188] ✓ 'Lainnya' | 'Bagaimana hukumnya jika ada tetangga yang mengadakan acara h' | faithfulness=1.000 | answer_relevancy=0.853
+2026-06-11 15:14:40,735 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:15:04,701 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:15:43,770 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:15:45,105 [INFO] [Row 189] ✓ 'Lainnya' | 'Apa ketentuan hukum jika seseorang karena kelalaiannya menye' | faithfulness=1.000 | answer_relevancy=0.800
+2026-06-11 15:15:46,098 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:16:08,238 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:16:38,945 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:16:40,093 [INFO] [Row 190] ✓ 'Lainnya' | 'Apa hukum memasang perangkap atau berburu tanpa izin di area' | faithfulness=1.000 | answer_relevancy=0.788
+2026-06-11 15:16:41,441 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:17:06,698 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:17:42,656 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:17:43,796 [INFO] [Row 191] ✓ 'Lainnya' | 'Apa sanksi hukum bagi orang yang lalai menjaga anak hingga m' | faithfulness=1.000 | answer_relevancy=0.703
+2026-06-11 15:17:44,922 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:18:04,746 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:18:35,006 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:18:36,086 [INFO] [Row 192] ✓ 'Lainnya' | 'Kepala desa memalsukan surat kontrak kerja untuk mengklaim t' | faithfulness=1.000 | answer_relevancy=0.625
+2026-06-11 15:18:37,277 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:19:02,264 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:19:34,360 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:20:07,570 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:20:43,906 [ERROR] Exception raised in Job[0]: TimeoutError()
+2026-06-11 15:20:45,262 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:20:46,627 [INFO] [Row 193] ✓ 'Lainnya' | 'Dokter mengeluarkan surat keterangan sehat palsu untuk pasie' | answer_relevancy=0.792
+2026-06-11 15:20:47,947 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:21:09,325 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:21:43,792 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:21:45,251 [INFO] [Row 194] ✓ 'Lainnya' | 'Pak Kur meninggalkan anaknya yang baru berumur 3 tahun di de' | faithfulness=1.000 | answer_relevancy=0.673
+2026-06-11 15:21:46,306 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:22:08,521 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:22:41,470 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:22:42,901 [INFO] [Row 195] ✓ 'Lainnya' | 'Saya korban kecelakaan lalu lintas dan sekarang jari tangan ' | faithfulness=0.900 | answer_relevancy=0.724
+2026-06-11 15:22:43,737 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:23:02,007 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:23:28,918 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:23:56,704 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:24:25,906 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:24:53,002 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 15:24:53,002 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 15:24:53,012 [ERROR] Prompt fix_output_format failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 15:24:53,013 [ERROR] Prompt n_l_i_statement_prompt failed to parse output: The output parser failed to parse the output including retries.
+2026-06-11 15:24:53,014 [ERROR] Exception raised in Job[0]: RagasOutputParserException(The output parser failed to parse the output including retries.)
+2026-06-11 15:24:53,856 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:24:54,860 [INFO] [Row 196] ✓ 'Lainnya' | 'Saya baru saja mengetahui bahwa karyawan di perusahaan saya ' | answer_relevancy=0.714
+2026-06-11 15:24:56,085 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:25:22,807 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:25:53,636 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:25:54,777 [INFO] [Row 197] ✓ 'Lainnya' | 'Di RT kami ada warga yang suka membunyikan kentongan tengah ' | faithfulness=1.000 | answer_relevancy=0.535
+2026-06-11 15:25:56,000 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:26:18,082 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:26:50,753 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:26:51,821 [INFO] [Row 198] ✓ 'Lainnya' | 'Saya lupa mematikan kompor gas saat keluar rumah dan api men' | faithfulness=1.000 | answer_relevancy=0.651
+2026-06-11 15:26:53,020 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:27:06,810 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:27:28,940 [INFO] HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2026-06-11 15:27:29,984 [INFO] [Row 199] ✓ 'Lainnya' | 'Anak saya berusia 13 tahun ketahuan mengambil uang di warung' | faithfulness=1.000 | answer_relevancy=0.763
+2026-06-11 15:27:30,003 [INFO] Selesai: 200 sukses, 0 di-skip.
+2026-06-11 15:27:30,103 [INFO] Checkpoint disimpan (2 baris masih NaN).
