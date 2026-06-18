@@ -1,0 +1,15 @@
+category,n_queries,n_valid,faithfulness,answer_relevancy
+OVERALL,200,197,0.9098,0.6667
+"Korupsi, Gratifikasi, Suap",15,14,0.8576,0.6204
+Pembunuhan,15,15,0.8715,0.7824
+Penganiayaan,15,15,0.9655,0.6706
+Penghinaan/Pencemaran Nama Baik,15,15,0.8188,0.6223
+Penyalahgunaan Jabatan,15,15,0.9898,0.7661
+Penyebaran Konten Illegal,15,15,0.9375,0.6836
+Produk Ilegal (Narkotika),15,15,0.8536,0.577
+Bahan Berbahaya,15,15,0.8906,0.6473
+Ujaran Kebencian,15,14,0.9716,0.6445
+Pencurian,15,14,0.8934,0.7131
+Penipuan/Curang,15,15,0.8762,0.5778
+Ancaman/Pemerasan,15,15,0.9671,0.6288
+Lainnya,20,20,0.9347,0.7337
